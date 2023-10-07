@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+
+    <title>Movie Watchlist</title>
+  </head>
+  <body>
+    <header>
+      <div class="section-container">
+        <div class="header-container">
+          <h1>Find your film</h1>
+          <nav>
+            <ul>
+              <li id="link">
+                <a href="/watchlist.html">My watchlist</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <form id="form" class="form">
+          <div class="form-control">
+            <input
+              type="text"
+              placeholder=" Search for a movie"
+              id="movie-input"
+            />
+            <button type="submit" class="btn">Search</button>
+            <i class="fas fa-search"></i>
+            <small id="message" class="error-message"
+              >Please enter search term</small
+            >
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <div class="section-container">
+        <div class="explore" id="explore">
+          <img src="assets/movie.svg" alt="symbol for resembling a movie" />
+          <p>Start exploring</p>
+        </div>
+        <div id="movie-list" class="movie-list"></div>
+      </div>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
